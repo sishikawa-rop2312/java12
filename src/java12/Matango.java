@@ -5,15 +5,13 @@ public class Matango {
 	char suffix;
 	
 	public Matango(char suffix) {
+		this.hp = 100;
 		this.suffix = suffix;
 	}
-		
-	public Matango() {
-	}
 
-	public void attack(Hero h) {
+	public void attack(Character c) {
 		System.out.println("キノコ" + this.suffix + "の攻撃");
 		System.out.println("10のダメージ");
-		h.hp -= 10;
+		c.hp -= 10;
 	}
 }
